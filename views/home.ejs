@@ -10,14 +10,22 @@
 <body>
     <div id="container">
         <div id="logo"></div>
-        <form action="" method="">
+        <form action="/ninja" method="POST">
+            <input
+            name="taskItem"
+            class="user-input"
+            type="text"
+            placeholder="Task to complete"
+            required
+            />
             <input class="user-input" placeholder="Task to complete">
             <input class="user-button" type="submit" value="add">
         </form>
 
         <ul>
-            <li class="ninja-item">Eat, Sleep and Code</li>
-            <li class="ninja-item">Watch Demon Slayer (gonpachiro)</li>
+            <% for( let index=0; index < list,length; index++ ) { %>
+            <li class="ninja-item"><%= list[index] %></li>
+           <% } %>
         </ul>
     </div>
 </body>
