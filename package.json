@@ -1,0 +1,29 @@
+{
+  "name": "ninja-tasker",
+  "version": "1.0.0",
+  "description": "a to do list for Naruto Runners and Weebs alike",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezekieldorce/ninja-tasker.git"
+  },
+  "keywords": [
+    "Naruto-Run"
+  ],
+  "author": "E. D.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezekieldorce/ninja-tasker/issues"
+  },
+  "homepage": "https://github.com/ezekieldorce/ninja-tasker#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "prettierrc": "0.0.0-5"
+  }
+}

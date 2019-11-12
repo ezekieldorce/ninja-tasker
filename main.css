@@ -1,0 +1,77 @@
+body {
+    background: red;
+}
+
+#container{
+    background: rgb(240, 248, 255);
+    text-align: center;
+    margin: auto;
+    padding: 20px 0 50px;
+
+}
+
+#logo {
+    background: url(./ninja-logo.png) no-repeat center;
+    height: 70px;
+}
+
+.user-input {
+    text-align: center;
+    width: 60%;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(210, 171, 171);
+    border: 0;
+    outline: none;
+    background-color: seagreen;
+    border-top: 1px solid rgb(255, 255, 255);
+    transition: all .5s ease-in;
+
+}
+
+.user-button {
+    text-align: center;
+    padding: 3px 18px;
+    color: rgb(239, 33, 31);
+    font-size: 15px;
+    font-weight: 300;
+    background-color: rgb(0, 0, 0);
+    margin-left: -80px;
+}
+
+.user-button:hover {
+    border: 2px solid #515151;
+}
+
+ul {
+
+}
+
+.ninja-item {
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 15px;
+    color: rgb(81, 81, 81);
+    border-bottom: 1px solid;
+    margin: 30px auto;
+}
+
+.ninja-item:hover {
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width 900px){
+    body{
+        background-color: red;
+        .user-button {
+            text-align: center;
+            padding: 3px 18px;
+            color: rgb(239, 33, 31);
+            font-size: 15px;
+            font-weight: 300;
+            background-color: rgb(0, 0, 0);
+            margin-left: -80px;
+        }
+    }
+}
