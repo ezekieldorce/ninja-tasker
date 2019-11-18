@@ -9,7 +9,7 @@ const listItem = document.querySelector("ul");
 
 listItem.addEventListener("click", function () {
     console.log(event.target.id);
-    fetch("/delete/0" + event.target.id, { method: "delete" }).then(function (res) {
+    fetch("/delete/" + event.target.id, { method: "delete" }).then(function (res) {
         read.json();
 
     })

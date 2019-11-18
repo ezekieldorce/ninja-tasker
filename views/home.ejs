@@ -21,7 +21,7 @@
         <ul>
             <% for( let index=0; index < list,length; index++ ) { %>
             <form action="/delete" method="DELETE"></form>
-            <li class="ninja-item"> id= "<%= [index] %>"</li>
+            <li class="ninja-item" id="<% list[index].id %>"> "<%= list[index].todo %>"</li>
             <input type="user-button" type="submit" value="delete" />
 
             <% } %>
