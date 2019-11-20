@@ -5,7 +5,7 @@ module.exports = function (sequelize, DataTypes) {
     var Task = sequelize.define("Tasks", {
         //define columns of our table
         todo: { type: DataTypes.STRING },
-        body: { type: DataTypes.STRING }
+        userID: { type: DataTypes.INTEGER }
     });
     return Task;
 };

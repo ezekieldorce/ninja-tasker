@@ -21,10 +21,11 @@ passport.use(
                 else if (dbUser.verifyPassword(password)) {
                     return done(null, false, { message: "Incorrect message" });
                 }
-                return done(null, dbUser);
+                // return done(null, dbUser);
                 else {
                     //if theres no user create one
                     db.User.create({
+                        nickname: req.nickname,
                         email: email,
                         password: password
                     }).then(function (newUser) {
